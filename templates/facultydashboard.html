@@ -1,0 +1,26 @@
+{% extends "basic.html" %}
+{% block title %} {{title}} {% endblock title %}
+{% block body %}
+<section class="text-gray-400 bg-gray-900 body-font">
+    <div class="lg:w-2/6 mx-auto rounded-lg h-54 overflow-hidden">
+      <img alt="content" class="object-cover object-center h-full w-full" src="https://media.istockphoto.com/id/1192088997/vector/group-of-joyful-multiethnic-schoolchildren.jpg?s=612x612&w=0&k=20&c=1uIdPbO0ubWgKS2ifFuEa8vB7jWsHxxJsVwODobKvfk=">
+    </div>
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full mb-12">
+        <h1 class="sm:text-5xl text-2xl font-medium title-font mb-4 text-white">Welcome of the Faculty Dashboard of BMSIT</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, praesentium minima quod facere vel itaque rem ab vero reiciendis obcaecati officia, sequi ex! Ducimus magnam, suscipit possimus temporibus facilis deserunt nostrum maiores corporis sapiente aperiam. Ea, iste! Nesciunt error corrupti nobis recusandae ullam quibusdam perferendis voluptas laboriosam itaque veritatis tempore necessitatibus iure quae eius fuga eaque ea eveniet delectus suscipit facilis atque, sunt numquam! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum quam sequi beatae labore dolores fuga.</p>
+      </div>
+      <div class="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 sm:px-0 items-end sm:space-x-4 sm:space-y-0 space-y-4">
+        <div class="relative sm:mb-0 flex-grow w-full">
+          <label for="email" class="leading-7 text-sm text-gray-400">Email</label>
+          <input type="email" id="email" name="email" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-red-500 focus:ring-2 focus:ring-red-900 focus:bg-transparent text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+        </div>
+        <div class="relative sm:mb-0 flex-grow w-full">
+          <label for="full-name" class="leading-7 text-sm text-gray-400">Password</label>
+          <input type="Password" id="full-name" name="full-name" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-red-500 focus:ring-2 focus:ring-red-900 focus:bg-transparent text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+        </div>
+        <button class="text-white bg-red-500 border-0 py-2 px-8 focus:outline-none hover:bg-red-600 rounded text-lg">Login</button>
+      </div>
+    </div>
+</section>
+{% endblock body %}
