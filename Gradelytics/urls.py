@@ -28,6 +28,7 @@ urlpatterns = [
     path('explore/', views.explore, name='explore'),
     path("facultydashboard/", include("facultydashboard.urls")),
     path("studentdashboard/", include("studentdashboard.urls")),
+    path("adminpanel/", include("adminpanel.urls")),
 ]
 
 if settings.DEBUG:
