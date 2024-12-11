@@ -1,0 +1,79 @@
+{% extends "basic.html" %}
+{% block title %} {{title}} {% endblock title%}
+{% block body %}
+<section class="text-gray-400 bg-gray-900 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+        <h1 class="text-5xl font-medium title-font text-white mb-12 text-center">Academic CIE Marks</h1>
+        <div style="display: flex; justify-content: space-around; align-items: flex-end; height: 300px;">
+          <!-- Bar 1 -->
+          <div style="width: 40px; background-color: #ef4444; height: 80%;">
+            <p style="color: white; margin-top: -20px;">80</p>
+          </div>
+          <!-- Bar 2 -->
+          <div style="width: 40px; background-color: #3b82f6; height: 90%;">
+            <p style="color: white; margin-top: -20px;">90</p>
+          </div>
+          <!-- Bar 3 -->
+          <div style="width: 40px; background-color: #10b981; height: 70%;">
+            <p style="color: white; margin-top: -20px;">70</p>
+          </div>
+          <!-- Bar 4 -->
+          <div style="width: 40px; background-color: #f59e0b; height: 60%;">
+            <p style="color: white; margin-top: -20px;">60</p>
+          </div>
+          <!-- Bar 5 -->
+          <div style="width: 40px; background-color: #6366f1; height: 85%;">
+            <p style="color: white; margin-top: -20px;">85</p>
+          </div>
+        </div>
+        <div style="display: flex; justify-content: space-around; margin-top: 16px; align-items:center;">
+          <span style="color: white;">Dis. Maths</span>
+          <span style="color: white;">DDCO</span>
+          <span style="color: white;">&nbsp&nbsp&nbsp&nbsp&nbspDS&A&nbsp&nbsp</span>
+          <span style="color: white;">&nbsp&nbsp&nbspGithub</span>
+          <span style="color: white;">Op. System</span>
+        </div>
+      </div>
+    </div>
+</section>
+<section class="text-gray-400 bg-gray-900 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+        <h2 class="text-5xl font-medium title-font text-white mb-12 text-center">Attendance Distribution</h2>
+        <div class="all-pie-charts" style="display:flex; align-items: center; justify-content:center;">
+        <div class="flex justify-center" style="margin: 25px">
+          <svg width="300" height="300" viewBox="0 0 32 32" class="inline-block"  style="border-radius: 150px; margin: 25px">
+            <circle r="16" cx="16" cy="16" fill="#ff0000" stroke="#10b981" stroke-width="32" stroke-dasharray="75 25" transform="rotate(-90) translate(-32)"></circle>
+            <text x="16" y="17" text-anchor="middle" dy="0.3em" font-size="4" fill="black">Maths</text>
+          </svg>
+        </div>
+        <div class="flex justify-center" style="margin: 25px">
+          <svg width="300" height="300" viewBox="0 0 32 32" class="inline-block"  style="border-radius: 150px; margin: 25px">
+            <circle r="16" cx="16" cy="16" fill="#ff0000" stroke="#10b981" stroke-width="32" stroke-dasharray="55 45" transform="rotate(-90) translate(-32)"></circle>
+            <text x="16" y="17" text-anchor="middle" dy="0.3em" font-size="4" fill="black">DSA</text>
+            {% comment %} <text x="16" y="17" text-anchor="middle" dy="0.3em" font-size="3" fill="white">75% Present</text>
+            <text x="16" y="20" text-anchor="middle" dy="0.3em" font-size="3" fill="white">25% Absent</text> {% endcomment %}
+          </svg>
+        </div>
+        <div class="flex justify-center" style="margin: 25px">
+          <svg width="300" height="300" viewBox="0 0 32 32" class="inline-block"  style="border-radius: 150px; margin: 25px">
+            <circle r="16" cx="16" cy="16" fill="#ff0000" stroke="#10b981" stroke-width="32" stroke-dasharray="82 18" transform="rotate(-90) translate(-32)"></circle>
+            <text x="16" y="17" text-anchor="middle" dy="0.3em" font-size="4" fill="black">OS</text>
+            {% comment %} <text x="16" y="17" text-anchor="middle" dy="0.3em" font-size="3" fill="white">75% Present</text>
+            <text x="16" y="20" text-anchor="middle" dy="0.3em" font-size="3" fill="white">25% Absent</text> {% endcomment %}
+          </svg>
+        </div>
+        <div class="flex justify-center" style="margin: 25px">
+          <svg width="300" height="300" viewBox="0 0 32 32" class="inline-block"  style="border-radius: 150px; margin: 25px">
+            <circle r="16" cx="16" cy="16" fill="#ff0000" stroke="#10b981" stroke-width="32" stroke-dasharray="96 4" transform="rotate(-90) translate(-32)"></circle>
+            <text x="16" y="17" text-anchor="middle" dy="0.3em" font-size="4" fill="black">DDCO</text>
+            {% comment %} <text x="16" y="17" text-anchor="middle" dy="0.3em" font-size="3" fill="white">75% Present</text>
+            <text x="16" y="20" text-anchor="middle" dy="0.3em" font-size="3" fill="white">25% Absent</text> {% endcomment %}
+          </svg>
+        </div> 
+        </div>
+      </div>
+    </div>
+</section>
+{% endblock body%}

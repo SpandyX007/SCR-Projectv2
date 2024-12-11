@@ -21,3 +21,7 @@ def student(request):
             return render(request,'studentdashboard.html',{'error':'Invalid Email-Id','title':'student'})
     print("normal")
     return render(request, 'student.html',param)
+
+def studentperformance(request):
+    params={'title': 'performance'}
+    return render(request, 'studentperformance.html', params)
